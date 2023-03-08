@@ -1,22 +1,31 @@
-const DayEL = document.getElementsById("days");
-const HourEl = document.getElementsById("hours");
-const MinEl = document.getElementsById("minutes");
-const SecEl = document.getElementsById("seconds");
+const days  = document.querySelector("#days");
+const hours = document.querySelector("#Hours");
+const minutes = document.querySelector("#minutes");
+const seconds = document.querySelector("#seconds");
 
-const NewYeartime = new Date("Jan 1,2024 00:00:00").getTime()
+seconds.innerHTML="rajan";
+function updatetimer(){
+const currentyear = new Date().getFullYear();    
+const newYear = new Date(`January 1 ${currentyear+1} 00:00:00`);
+const currentDate=new Date();
 
-function updatecdn(){
-    const now = new Date().getTime();
-    const gap = NewYeartime-now
-    const sec=1000;
-    const min = sec * 60;
-    const hour = min * 60;
-    const day = hour * 24;
+const diff = newYear-currentDate;
 
-    const d = math.floor(gap/day);
-    const HOUR = math.floor((gap % day)/hour) ;
-    const MIN = math.floor((gap % hour)/min);
-    const SEC = math.floor((gap % min)/sec);
+const d= Math.floor(diff/1000/60/60/24);
 
-    DayEL.innerText = d;
+const h = Math.floor((diff/1000/60/60)%24);
+
+const m=Math.floor((diff/1000/60)%60);
+
+const s=Math.floor((diff/1000)%60);
+
+days.innerHTML= d<10?"0"+d:d;
+hours.innerHTML= h<10?"0"+h:h;
+minutes.innerHTML= m<10?"0"+m:m;
+seconds.innerHTML=s<10?"0"+s:s ;
+
+// console.log(d+" "+ h +" "+ m +" "+s+" ");
+
 }
+updatetimer();
+setInterval(updatetimer,500);

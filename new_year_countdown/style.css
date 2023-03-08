@@ -1,74 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0rem;
+    font-family: 'poppins',sans-serif;
+}
+
 body{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: rgb(151, 7, 151);
-}
-h2{
-    color: #fff;
-    text-transform: uppercase;
-
-}
-.year{
-    font-size: 3em;
-    font-weight: bold;
-    color: #fff;
-}
-.countdown{
-    margin: 30px;
-    background-color: rgba(0, 0, 0, .2);
-    width: 100%;
-    color:#fff;
-    height: 120px;
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.pexels.com/photos/769525/pexels-photo-769525.jpeg?cs=srgb&dl=pexels-rakicevic-nenad-769525.jpg&fm=jpg&_gl=1*8ls6xy*_ga*MTE1NTQ1MjYyMS4xNjYxNjcxNzUx*_ga_8JE65Q40S6*MTY2NjE2NzUxMi45LjAuMTY2NjE2NzUxMi4wLjAuMA..");
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+
 }
-
-.countdown div{
-
-    font-size: 2em;
-    font-weight: 500;
-    position: relative;
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    gap: 30px;
+}
+.count{
+    font-size: 15px;
+    margin: 15px 0px;    
+}
+.timer{
+    font-family: 'Inspiration',cursive;
+    font-weight: 600;
+    font-size: 60px;
+}
+ .box{
+    width: 50px;
+    height: 50px;
     text-align: center;
 }
-
-.countdown div::before{
-    content: "";
-    position: absolute;
-    bottom:-30px;
-    left: 0;
-    font-size: 20px;
-    line-height: 35px;
-    font-weight: 500;
-    width: 100%;
-    height: 35px;
-
+.box h2{
+    font-size: 28px;
+}
+.box small{
+    font-size:18px;
 }
 
-.countdown #days::before{
-    content: "Days";
+@media  screen and (min-width:700px) {
+    .timer{
+        font-size:90px;
+        font-weight: bold;
+    }    
+    .counter{
 
-}
-
-.countdown #minutes::before{
-    content: "Minutes";
-    
-}
-
-.countdown #hours::before{
-    content: "Hours";
-    
-}
-
-
-.countdown #seconds::before{
-    content: "Seconds";
-    
+        gap:60px;
+    }
+    .count{
+        font-size: 20px;
+    }
+    .box{
+        width: 70px;
+        height: 70px;
+        text-align: center;
+    }
+    .box h2{
+        font-size: 35px;
+    }
+    .box small{
+        font-size:25px;
+    }
 }
