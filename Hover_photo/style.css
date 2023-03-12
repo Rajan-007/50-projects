@@ -1,0 +1,28 @@
+body{
+    margin:2px;
+    border:2px solid #000;
+    background-color:#b3b3b3;
+  }
+  #image{
+    line-height:600px;
+    width:90vw;
+    height:80vh;
+    border:5px solid #000;
+    margin:0 auto;
+    background-color: #8e68ff;
+    background-image:url('');
+    background-repeat:no-repeat;
+    color:#f4f4f4;
+    text-align:center;
+    background-size:cover;
+    margin-bottom:30px;
+    font-size:200%; 
+  }
+  .box{
+    display:flex;
+    justify-content:space-evenly;
+  }
+  .preview{
+    width:20%;
+    border:10px solid #000;
+  }
