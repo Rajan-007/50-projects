@@ -24,12 +24,9 @@ function Eligible() {
       break;
   }
 
-  let resultDiv = document.getElementById('result');
-  if (!resultDiv) {
-    resultDiv = document.createElement('div');
-    resultDiv.id = 'result';
-    document.getElementById('wrapper').appendChild(resultDiv);
-  }
+  let resultDiv = document.createElement('div');
+  resultDiv.id = 'result';
+  document.getElementById('wrapper').appendChild(resultDiv);
   resultDiv.innerHTML = text;
 }
 
