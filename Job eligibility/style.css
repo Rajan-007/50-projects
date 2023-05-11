@@ -3,7 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #a2f1c7;
+  background-color: #1fb8c9;
   overflow-y: hidden;
 }
 
@@ -45,21 +45,21 @@ input[type='radio'] + label::before {
   display: inline-block;
   width: 12px;
   height: 12px;
-  border: 2px solid #a2f1c7;
+  border: 2px solid #eebf05;
   border-radius: 50%;
   margin-right: 5px;
   vertical-align: middle;
 }
 
 input[type='radio']:checked + label::before {
-  background-color: #a2f1c7;
+  background-color: #e20f0f;
 }
 
 #wrapper {
   height: 350px;
   width: 400px;
   margin: 200px auto;
-  background-color: #1f2029;
+  background-color: #351a3c;
   padding: 30px;
 }
 

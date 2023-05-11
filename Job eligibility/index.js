@@ -20,7 +20,7 @@ function Eligible() {
       text = 'You are not eligible to apply for this Job';
       break;
     default:
-      text = 'No qualification selected';
+      text = 'select the qualification ';
       break;
   }
 
