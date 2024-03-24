@@ -14,6 +14,7 @@ function changeBg(){
     wrap.style.backgroundColor = hexC;
     color.innerHTML = hexC ;
     heading.style.color=hexC;
+    btn.style.color=hexC;
 }
 
 function randHexValue(){

@@ -32,8 +32,14 @@ button{
     background-color: rgb(219, 54, 54);
     color:white;
     border-radius: 15px;
-    padding: 20px 80px;
+    padding: 25px 50px;
     font-size: 28px;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
     cursor:pointer;
+    
+}
+
+button:hover{
+    box-shadow: 1px 1px 8px white,
+    -1px -1px 8px black;
 }

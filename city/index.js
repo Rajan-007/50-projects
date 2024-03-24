@@ -4,12 +4,11 @@ button.addEventListener('click',stats);
 
 
 function stats(){
-    console.log("clicked")
     const input = document.getElementById("selection");
     const city = input.options[input.selectedIndex].value
     let population = 0 ;
     let literacy = 0;
-    let language = '';
+    let language = ' Tamil';
 
     switch(city){
         case 'Bengaluru':
