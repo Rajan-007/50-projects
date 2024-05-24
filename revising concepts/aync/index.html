@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+</body>
+<script>
+    // function display(msg){
+    //     document.getElementById('demo').innerHTML=msg;
+    // }
+    // async function hellofn(){
+    //     return 'hello'
+    // }
+
+    // hellofn().then(
+    //     function(value){
+    //         display(value)
+    //     }
+    // )
+
+        let travel = new Promise((resolve , reject) =>{
+            const reached = false;
+            if(reached){
+                resolve ('reached')
+            }
+            else{
+                reject("still travelling")
+            }
+        })
+
+        async function isReached(){
+            try{
+                result = await travel
+                console.log(result)
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+
+        isReached()
+
+</script>
+</html>
